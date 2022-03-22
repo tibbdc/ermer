@@ -1,0 +1,39 @@
+~id,name:String,~label
+g1,Cofactor and Prosthetic Group Biosynthesis,Pathway
+g2,Purine and Pyrimidine Biosynthesis,Pathway
+g3,Alternate Carbon Metabolism,Pathway
+g4,Pentose Phosphate Pathway,Pathway
+g5,"Tyrosine, Tryptophan, and Phenylalanine Metabolism",Pathway
+g6,Oxidative Phosphorylation,Pathway
+g7,"Valine, Leucine, and Isoleucine Metabolism",Pathway
+g8,Arginine and Proline Metabolism,Pathway
+g9,Nucleotide Salvage Pathway,Pathway
+g10,Unassigned,Pathway
+g11,Membrane Lipid Metabolism,Pathway
+g12,tRNA Charging,Pathway
+g13,Citric Acid Cycle,Pathway
+g14,Pyruvate Metabolism,Pathway
+g15,Anaplerotic Reactions,Pathway
+g16,Alanine and Aspartate Metabolism,Pathway
+g17,Glycolysis/Gluconeogenesis,Pathway
+g18,Methylglyoxal Metabolism,Pathway
+g19,Cysteine Metabolism,Pathway
+g20,Lipopolysaccharide Biosynthesis / Recycling,Pathway
+g21,Folate Metabolism,Pathway
+g22,Threonine and Lysine Metabolism,Pathway
+g23,Cell Envelope Biosynthesis,Pathway
+g24,Glycine and Serine Metabolism,Pathway
+g25,Methionine Metabolism,Pathway
+g26,Glyoxylate Metabolism,Pathway
+g27,Nitrogen Metabolism,Pathway
+g28,Histidine Metabolism,Pathway
+g29,Inorganic Ion Transport and Metabolism,Pathway
+g30,Glutamate Metabolism,Pathway
+g31,Glycerophospholipid Metabolism,Pathway
+g32,"Transport, Inner Membrane",Pathway
+g33,"Transport, Outer Membrane Porin",Pathway
+g34,"Transport, Outer Membrane",Pathway
+g35,Murein Recycling,Pathway
+g36,Biomass and maintenance functions,Pathway
+g37,Murein Biosynthesis,Pathway
+g38,Metabolite Repair,Pathway

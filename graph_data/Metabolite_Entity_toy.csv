@@ -1,0 +1,4 @@
+compartmentname:String,~id,name:String,bigg.metabolite:String,biocyc:String[],chebi:String[],hmdb:String[],kegg.compound:String[],metanetx.chemical:String[],seed.compound:String[],~label
+gly_e,gly,Glycine,gly,META:GLY,"['CHEBI:10792', 'CHEBI:132194', 'CHEBI:14344', 'CHEBI:15428', 'CHEBI:24368', 'CHEBI:32507', 'CHEBI:32508', 'CHEBI:42964', 'CHEBI:5460', 'CHEBI:57305']",HMDB00123,C00037,MNXM29,cpd00033,Metabolite
+gly_p,gly,Glycine,gly,META:GLY,"['CHEBI:10792', 'CHEBI:132194', 'CHEBI:14344', 'CHEBI:15428', 'CHEBI:24368', 'CHEBI:32507', 'CHEBI:32508', 'CHEBI:42964', 'CHEBI:5460', 'CHEBI:57305']",HMDB00123,C00037,MNXM29,cpd00033,Metabolite
+gly_c,gly,Glycine,gly,META:GLY,"['CHEBI:10792', 'CHEBI:132194', 'CHEBI:14344', 'CHEBI:15428', 'CHEBI:24368', 'CHEBI:32507', 'CHEBI:32508', 'CHEBI:42964', 'CHEBI:5460', 'CHEBI:57305']",HMDB00123,C00037,MNXM29,cpd00033,Metabolite

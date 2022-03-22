@@ -6,7 +6,6 @@ from aws_cdk import (
     aws_iam as iam,
     aws_neptune as neptune
     )
-from aws_cdk.aws_ecr_assets import DockerImageAsset
 
 class NeptuneConstruct(core.Construct):
 

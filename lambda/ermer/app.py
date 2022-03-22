@@ -108,14 +108,8 @@ def regulation(source,target,step,stype,g):
         if step == 1:
             path = g.V(source).outE("CPI").inV().hasId(target).path().by(__.valueMap(*attributes).by(__.unfold())).toList()
             return path
-        elif step < 5:
-            path = g.V(source).outE("CPI").inV().repeat(__.outE('TFGI',"SFGI","sRGI","PPI").inV().simplePath()).emit().times(step -1).hasId(target).path().by(__.valueMap(*attributes).by(__.unfold())).toList()
-            return path
         else:
-            # path1 = g.V(source).outE("CPI").inV().hasId(target).path().by(__.valueMap(*attributes).by(__.unfold())).toList()
             path = g.V(source).store('x').outE("CPI").inV().where(without('x')).aggregate('x').repeat(__.outE('TFGI',"SFGI","sRGI","PPI").inV().where(without('x')).aggregate('x')).until(__.hasId(target).or_().loops().is_(step - 1)).hasId(target).path().by(__.valueMap(*attributes).by(__.unfold())).toList()
-            # paths = path1 + path2
-            # print(paths)
             return path
     elif stype == "gene":
         paths = g.V(source).store('x').repeat(__.outE('TFGI',"SFGI","sRGI","PPI").inV().where(without('x')).aggregate('x')).until(__.hasId(target).or_().loops().is_(step)).hasId(target).path().by(__.valueMap(*attributes).by(__.unfold())).toList()

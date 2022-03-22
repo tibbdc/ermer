@@ -47,7 +47,7 @@ cdk --version
 To deploy our demo project, please use git to clone our project:
 
 ```
-git clone {github url}
+git clone https://github.com/tibbdc/ermer
 ```
 
 To make sure that you have the credentials to interact with [AWS](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html).
@@ -155,4 +155,4 @@ This stack contains the resources below:
 
 ## License Summary
 
-This sample code is made available under the MIT-0 license. See the LICENSE file.
+This sample code is made available under the Apache license. See the LICENSE file.

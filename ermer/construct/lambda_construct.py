@@ -1,5 +1,4 @@
 import os
-import configparser
 from aws_cdk import (
     aws_lambda as _lambda,
     aws_s3 as _s3,

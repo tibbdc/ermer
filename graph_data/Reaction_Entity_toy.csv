@@ -1,0 +1,2 @@
+~id,name:String,bigg.reaction:String,biocyc:String,kegg.reaction:String,metanetx.reaction:String,rhea:String,sbo:String,equation:String,gpr:String,~label
+GLYCL,Glycine Cleavage System,GLYCL,none,R01221,MNXR100330,"['27758', '27759', '27760', '27761']",SBO:0000375,gly_c + nad_c + thf_c --> co2_c + mlthf_c + nadh_c + nh4_c,b0116 and b2904 and b2903 and b2905,Reaction
