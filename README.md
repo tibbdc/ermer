@@ -1,28 +1,24 @@
-
 # ERMer: A serverless platform for navigating, analyzing, and visualizing Escherichiacoli regulatory landscape through graph database
 
-The code of paper 'ERMer: A serverless platform for navigating, analyzing, and visualizing Escherichiacoli regulatory landscape through graph database', here we provide our backend demo code that how to quickly deploy the resources on AWS, and how to implement our business logic. 
+The code of paper 'ERMer: A serverless platform for navigating, analyzing, and visualizing Escherichiacoli regulatory landscape through graph database', here we provide our backend demo code that how to quickly deploy the resources on AWS, and how to implement our business logic.
 
 ## Introduction
 
-This project is developed by using [AWS CDK](https://aws.amazon.com/cdk/), and all the cloud application resources are defined by using python language. 
+This project is developed by using [AWS CDK](https://aws.amazon.com/cdk/), and all the cloud application resources are defined by using python language.
 
-+   ermer: all the application resources definitions
++ ermer: all the application resources definitions
++ lambda: our demo business logic, how to use gremlin api to query data in python
++ notebook: the demo code for connecting the AWS Neptune, and the Neptune loader command for loading data from external files directly into a Neptune DB instance. We recommend you that use AWS SageMaker to set up with [Neptune Jupyter notebooks](https://docs.aws.amazon.com/neptune/latest/userguide/graph-notebooks.html).
++ graph_data: demo graph data in gremlin format, which will be uploaded to your s3 bucket.
 
-+   lambda: our demo business logic, how to use gremlin api to query data in python
-
-+   notebook: the demo code for connecting the AWS Neptune, and the Neptune loader command for loading data from external files directly into a Neptune DB instance. We recommend you that use AWS SageMaker to set up with [Neptune Jupyter notebooks](https://docs.aws.amazon.com/neptune/latest/userguide/graph-notebooks.html).
-
-+   graph_data: demo graph data in gremlin format, which will be uploaded to your s3 bucket.
-
-## Installation & Deployment 
+## Installation & Deployment
 
 ### Installation
 
 AWS CDK uses specific versions Node.js (>=10.13.0, except for version 13.0.0 - 13.6.0). A version in active long-term support (LTS) is recommended.
 
-+   To install node.js, please folow the official instructions node.js website and follow the instructions for your given operating system.
-+   If you already have node.js installed, verify which version you have by running:
++ To install node.js, please folow the official instructions node.js website and follow the instructions for your given operating system.
++ If you already have node.js installed, verify which version you have by running:
 
 ```
 node --version
@@ -117,18 +113,18 @@ To deploy the all application resources on AWS.
 
 ### Useful commands
 
- * `cdk ls`          list all stacks in the app
- * `cdk synth`       emits the synthesized CloudFormation template
- * `cdk deploy`      deploy this stack to your default AWS account/region
- * `cdk diff`        compare deployed stack with current state
- * `cdk docs`        open CDK documentation
- * `cdk destroy`    delete the deployed stack   
+* `cdk ls`          list all stacks in the app
+* `cdk synth`       emits the synthesized CloudFormation template
+* `cdk deploy`      deploy this stack to your default AWS account/region
+* `cdk diff`        compare deployed stack with current state
+* `cdk docs`        open CDK documentation
+* `cdk destroy`    delete the deployed stack
 
 ### Output
 
 After you deploy the stack, you will get the following resources:
 
-``` python
+```python
 ermer-prod.apigatewayconstructermerEndpoint* = "{your_apigteway_endpoint}"
 ermer-prod.neptuneconstructNeptuneClusterEndpoints* = "{your_cluster_endpoint}"
 ermer-prod.neptuneconstructNeptuneRoleArn* = "{your_neptune_assumed_role}"
@@ -145,14 +141,15 @@ If you don't need the application stack any more, please delete the resources on
 
 This stack contains the resources below:
 
-+   S3: Amazon S3 is cloud object storage with industry-leading scalability, data availability, security, and performance.
-
-+   API Gateway: Amazon API Gateway is a fully managed service that makes it easy for developers to create, publish, maintain, monitor, and secure APIs at any scale.
-
-+   Lambda: Lambda is a compute service that lets you run code without provisioning or managing servers. Lambda runs your code on a high-availability compute infrastructure and performs all of the administration of the compute resources, including server and operating system maintenance, capacity provisioning and automatic scaling, code monitoring and logging. 
-
-+   Neptune: Amazon Neptune is a fast, reliable, fully managed graph database service that makes it easy to build and run applications.
++ S3: Amazon S3 is cloud object storage with industry-leading scalability, data availability, security, and performance.
++ API Gateway: Amazon API Gateway is a fully managed service that makes it easy for developers to create, publish, maintain, monitor, and secure APIs at any scale.
++ Lambda: Lambda is a compute service that lets you run code without provisioning or managing servers. Lambda runs your code on a high-availability compute infrastructure and performs all of the administration of the compute resources, including server and operating system maintenance, capacity provisioning and automatic scaling, code monitoring and logging.
++ Neptune: Amazon Neptune is a fast, reliable, fully managed graph database service that makes it easy to build and run applications.
 
 ## License Summary
 
 This sample code is made available under the Apache license. See the LICENSE file.
+
+## How to cite:
+
+Zhitao Mao,Ruoyu Wang,Haoran Li,Yixin Huang,Qiang Zhang,Xiaoping Liao and Hongwu Ma, ERMer: a serverless platform for navigating, analyzing, and visualizing *Escherichia coli* regulatory landscape through graph database, *Nucleic Acids Research*, 2022; [https://doi.org/10.1093/nar/gkac288](https://doi.org/10.1093/nar/gkac288)
